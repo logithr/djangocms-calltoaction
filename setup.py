@@ -22,7 +22,7 @@ setup(
         'django-filer>=0.9.9',
         'cmsplugin-filer>=0.10',
         'django-parler>=1.4',
-        'django-classy-tags>=0.60',
+        'django-classy-tags>=0.6.0',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
