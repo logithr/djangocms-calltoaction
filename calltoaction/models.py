@@ -43,6 +43,10 @@ class CallToActionRepository(TranslatableModel):
         else:
             return ''
 
+    def rendered(self):
+        from django.template.loader import get_template, Context
+        return get_template(self.style).render(Context({'call_to_action': self}))
+
 
 @python_2_unicode_compatible
 class CallToAction(CMSPlugin):
