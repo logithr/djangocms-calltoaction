@@ -29,8 +29,8 @@ class CallToActionRepository(TranslatableModel):
 
     class Meta:
         db_table = 'calltoaction_repository'
-        verbose_name = 'Call to Action Repository'
-        verbose_name_plural = 'Call to Action'
+        verbose_name = 'Call to Action'
+        verbose_name_plural = 'Call to Action Repository'
 
     def __str__(self):
         return self.code
