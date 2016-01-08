@@ -44,7 +44,8 @@ class CallToActionRepository(TranslatableModel):
             return ''
 
     def rendered(self):
-        from django.template.loader import get_template, Context
+        from django.template.loader import get_template
+        from django.template import Context
         return get_template(self.style).render(Context({'call_to_action': self}))
 
 
