@@ -18,10 +18,10 @@ class CallToActionRepository(TranslatableModel):
         choices=STYLES, default=STYLES[0][0])
 
     translations = TranslatedFields(
-        content = HTMLField(blank=True),
+        content=HTMLField(blank=True),
 
-        link_text = models.CharField(max_length=100, blank=True),
-        link_custom = models.CharField(max_length=400, blank=True)
+        link_text=models.CharField(max_length=100, blank=True),
+        link_custom=models.CharField(max_length=400, blank=True)
     )
 
     image = FilerImageField(null=True, blank=True)
